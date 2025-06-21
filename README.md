@@ -41,3 +41,84 @@ A secure and powerful backend system for managing personal contacts — built wi
 
 ## 📁 Project Structure
 
+Test it live at : https://contact-manager-backend-p5l2.onrender.com
+
+Start your server locally
+
+    Run: npm start
+
+    Ensure it shows: Server running on port 5001
+
+Register a new user
+
+    Method: POST
+
+    URL: http://localhost:5001/api/users/register
+
+    Body (JSON):
+
+    {
+      "username": "Archana",
+      "email": "archana@gmail.com",
+      "password": "strongPassword123"
+    }
+
+    Click Send
+
+Login the registered user
+
+    Method: POST
+
+    URL: http://localhost:5001/api/users/login
+
+    Body (JSON):
+
+    {
+      "email": "archana@gmail.com",
+      "password": "strongPassword123"
+    }
+
+    Click Send
+
+    Copy the accessToken from the response
+
+Use the token for protected routes
+
+    In Thunder Client/Postman, go to Headers
+
+    Add:
+
+    Key: Authorization
+    Value: Bearer <paste your token here>
+
+Create a new contact
+
+    Method: POST
+
+    URL: http://localhost:5001/api/contacts
+
+    Headers:
+
+        Authorization: Bearer <your_token>
+
+    Body (JSON):
+
+    {
+      "name": "Jaya",
+      "email": "jaya@example.com",
+      "phone": "9999999999"
+    }
+
+    Click Send
+
+Get all contacts
+
+    Method: GET
+
+    URL: http://localhost:5001/api/contacts
+
+    Headers:
+
+        Authorization: Bearer <your_token>
+
+    Click Send
