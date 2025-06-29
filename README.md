@@ -22,7 +22,7 @@ A secure and powerful backend system for managing personal contacts — built wi
 - Backend input validation and structured error handling
 
 🧪 **Tested with Thunder Client**
-- All endpoints tested and verified using VS Code’s built-in REST client plugin – **Thunder Client** ⚡
+- All endpoints tested and verified using VS Code’s built-in REST client plugin , no need to switch between POSTMAN and VSCODE – **Thunder Client** ⚡
 
 ---
 
